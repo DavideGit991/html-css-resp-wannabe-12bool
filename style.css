@@ -38,7 +38,7 @@ img{
   line-height: 50px;
 }
 .box{
-  padding: 15px 2%;
+  padding: 14px 2%;
   text-align: center;
 }
 
@@ -57,6 +57,8 @@ img{
 }
 
 /* proprietà responsive */
+
+/* proprietà in mobile */
 @media screen and (max-width: 768px){
   #screenimg{
     max-width: 55%;
@@ -70,6 +72,7 @@ img{
     padding: 15px 3%;
   }
   .title{
+    font-size: 35px;
     font-style: italic;
     font-weight: bolder;
   }
@@ -81,5 +84,39 @@ img{
   p{
     font-family: sans-serif;
     font-size: 20px;
+  }
+}
+
+/* proprietà in tablet */
+@media screen and (min-width: 769px) and (max-width: 992px){
+  #screenimg{
+    max-width: 55%;
+    height: auto;
+  }
+  img{
+    max-width:35%;
+    height: auto;
+  }
+  .box{
+    padding: 15px 3%;
+  }
+  .title{
+    color: red;
+    font-size: 35px;
+    font-style: normal ;
+    font-weight: bolder;
+  }
+  h3{
+    color: green;
+    font-size: 25px;
+    font-family: monospace;
+  }
+  p{
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  .board_bottom{
+    height: 150px;
+    padding: 20px 0;
   }
 }
