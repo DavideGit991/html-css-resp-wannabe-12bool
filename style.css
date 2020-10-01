@@ -25,14 +25,7 @@ img{
   /* background-color: lightgreen; */
   /* border: solid 1px #000; */
 }
-section::after {
 
-  content: "";
-  display: table;
-  clear: both;
-  margin: 15px;
-
-}
 .background{
   width: 100vw;
   background-color: #f9f9f9;
@@ -61,4 +54,32 @@ section::after {
 }
 .board_bottom{
   border-bottom: solid 1px #000;
+}
+
+/* proprietà responsive */
+@media screen and (max-width: 768px){
+  #screenimg{
+    max-width: 55%;
+    height: auto;
+  }
+  img{
+    max-width:40%;
+    height: auto;
+  }
+  .box{
+    padding: 15px 3%;
+  }
+  .title{
+    font-style: italic;
+    font-weight: bolder;
+  }
+  h3{
+    color: red;
+    font-size: 25px;
+    font-family: monospace;
+  }
+  p{
+    font-family: sans-serif;
+    font-size: 20px;
+  }
 }
