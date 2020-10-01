@@ -9,25 +9,56 @@ img{
   max-width:50%;
   height: auto;
 }
-#screen{
+#screenimg{
   max-width: 82%;
   height: auto;
 }
 
+.container{
+  margin: 25px auto;
+}
+
 [class*="col-"] {
-  min-height: 100px;
-  background-color: lightgreen;
-  border: solid 1px #000;
+  margin: 5px 0;
+  /* REGOLE DEBUG  */
+  /* min-height: 100px; */
+  /* background-color: lightgreen; */
+  /* border: solid 1px #000; */
 }
-section{
+section::after {
+
+  content: "";
+  display: table;
+  clear: both;
   margin: 15px;
+
 }
+.background{
+  width: 100vw;
+  background-color: #f9f9f9;
+}
+
 .title{
-  font-size: 30px;
+  font-weight: bold;
+  font-size: 35px;
   text-align: center;
   line-height: 50px;
 }
 .box{
   padding: 15px 2%;
   text-align: center;
+}
+
+/* proprietà sezione 3 */
+
+#profileimg{
+  padding: 1% 1%;
+  border-radius: 50% 50%;
+  max-width: 25%;
+  height: auto;
+  background-color: blue;
+  color: lightblue;
+}
+.board_bottom{
+  border-bottom: solid 1px #000;
 }
